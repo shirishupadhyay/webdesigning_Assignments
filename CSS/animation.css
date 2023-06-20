@@ -1,0 +1,30 @@
+.circle{
+  width :100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: blue;
+  transition: background-color 1s ease;
+  animation-name: moveCircle;
+  animation-duration: 15s;
+  position: absolute;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function:  linear;
+
+}
+
+/*Diagonal Movement */
+@keyframes moveCircle {
+  0% { top: 0; left: 0; } /* Starting position */
+  25% { top: 0; left: 95%; } /* Move to the right */
+  50% { top: 87%; left: 90%; } /* Move to the bottom */
+  75% { top: 90%; left: 0; } /* Move to the left */
+  100% { top: 0; left: 0; } /* Move to the top */
+}
+.circle:hover {
+  background-color: green;
+}
+/*Left to right*/
+/*@keyframes moveCircle {
+  0% { left: 0; } /* Starting position */
+  /*100% { left: 100%; } /* Ending position */
