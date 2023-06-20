@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><h1 style ="color:black; text-align:center">Students Form for complaints</h1>
+  </head>
+  <body bgcolor = "aqua">
+    <form>
+      <h2>Fill the following details carefully....</h2>
+      <br>
+      <h3>
+        <label for ="fname">First Name : </label>
+        <input type="text" id = "fname" name = "fname" size="50">
+          <br>
+        <label for ="lname">Last Name : </label>
+        <input type="text" id ="lname" name ="lname"  size="50">
+          <br>
+        <label for ="email">Email address : </label>
+        <input type="text" id ="email" name ="email"  size="50">
+          <br>
+        <hr>
+        </h3>
+        <h2> Select Gender</h2>
+        <h3>
+          <input type="radio" id="male" name="gender" >
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender">
+          <label for="female">Female</label><br></h3>
+        <hr>
+        <h2>Check all the facilities you want</h2>
+        <h3>
+          <input type="checkbox" id="hostel" name="facilities">
+          <label for="hostel"> I want to join hostel. </label><br>
+          <input type="checkbox" id="transport" name="facilities">
+          <label for="transport">I want transportation facilities. </label><br>
+        </h3>
+        <h3><label for="address" >Enter your address: </label></h3>
+        <textarea name="address" rows="2" cols="40"></textarea>
+        <hr>
+        <h2>
+        <label for ="cname"> Select your course</label></h2><br>
+        <select name ="cname" id="cname">
+          <option value ="AIML">AI & ML</option>
+          <option value ="DS">Data Science</option>
+          <option value ="CS">Cyber Security</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </body>
+</html>
